@@ -1,0 +1,11 @@
+{
+	"index.html": {
+		"resources": [
+			"js/index/index.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/index/index.css"
+		]
+	}
+}
