@@ -1,6 +1,10 @@
 mui.init();
 
 mui.ready(function() {
+
+	/**
+	 * 九宫格界面循环
+	 * */
 	var slider = document.getElementById('Gallery');
 	var group = slider.querySelector('.mui-slider-group');
 	var items = mui('.mui-slider-item', group);
@@ -24,5 +28,26 @@ mui.ready(function() {
 		sliderApi.gotoItem(0);
 	}
 	toggleLoop();
+
+	/**
+	 * 九宫格对应的页面
+	 * */
+	function openGridPages(aaa, bbb) {
+		document.getElementById(aaa).addEventListener('tap', function() {
+			mui.openWindow({
+				url: bbb
+			});
+		});
+	}
+
+	openGridPages('express-tap-id', 'grid/express.html');
+	openGridPages('phoneNumber-tap-id', 'grid/phoneNumber.html');
+	openGridPages('IDCard-tap-id', 'grid/idCard.html');
+	openGridPages('weather-tap-id', 'grid/weather.html');
+	openGridPages('postCodes-tap-id', 'grid/postCodes.html');
+	openGridPages('IPAddress-tap-id', 'grid/IPAddress.html');
+	openGridPages('baseStation-tap-id', 'grid/baseStation.html');
+	openGridPages('oilPrice-tap-id', 'grid/oilPrice.html');
+	openGridPages('news-tap-id', 'grid/news.html');
 
 });

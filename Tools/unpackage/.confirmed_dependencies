@@ -6,6 +6,15 @@
 			"fonts/mui.ttf",
 			"css/mui.min.css",
 			"css/index/index.css"
+		],
+		"refer": [
+			"grid/express.html"
+		]
+	},
+	"grid/IPAddress.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
 		]
 	}
 }
