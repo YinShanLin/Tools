@@ -1,0 +1,12 @@
+html,
+body {
+	background-color: #efeff4;
+}
+
+.mui-slider-indicator {
+	bottom: 0;
+}
+
+.mui-slider {
+	background-color: #f2f2f2;
+}
