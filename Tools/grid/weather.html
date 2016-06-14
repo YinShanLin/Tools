@@ -36,8 +36,8 @@
          days     string 	   否 	urlParam 	天数            3
 -->
 			<div class="mui-input-row">
-				<label for="mui-input-clear">位置</label>
-				<input type="text" class="mui-input-clear" id="weather-location-id" />
+				<label for="mui-input-clear">位置:</label>
+				<input type="text" class="mui-input-clear" id="weather-location-id" placeholder="请输入所要查询的城市" />
 			</div>
 			<div class="mui-input-row mui-hidden">
 				<label>语言</label>
@@ -55,7 +55,28 @@
 				<label>天数</label>
 				<input type="text" class="mui-input-clear" value="3" id="weather-days-id" />
 			</div>
+			<ul>
+				<li>
+					本查询支持简体,繁体,字母
+				</li>
+				<li>
+					本查询默认为三天(包括当天)
+				</li>
+			</ul>
 			<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="weather-submit-id">按钮</button>
+		</div>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span></span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span></span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span></span>
+				</li>
+			</ul>
 		</div>
 		<script type="text/javascript" src="../js/grid/weather.js"></script>
 	</body>
