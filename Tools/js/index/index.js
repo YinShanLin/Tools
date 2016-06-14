@@ -51,3 +51,4 @@ mui.ready(function() {
 	openGridPages('news-tap-id', 'grid/news.html');
 
 });
+
