@@ -5,12 +5,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>Weather</title>
-		<meta http-equiv="Access-Control-Allow-Origin" content="*">
-		<meta http-equiv="content-security-policy">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
 		<link rel="stylesheet" href="../css/grid/weather.css" />
 
 		<script type="text/javascript" src="../js/mui.min.js"></script>
@@ -27,9 +25,38 @@
 			<h1 class="mui-title">天气查询</h1>
 		</header>
 		<div class="mui-content">
-
+			<!--
+	作者：guomindongdsl@163.com
+	时间：2016-06-14
+	描述：location: '%E6%9C%9D%E9%98%B3',
+			language: 'zh-Hans',
+			unit: 'c',
+			start: '0',
+			days: '3'
+-->
+			<div class="mui-input-row">
+				<label for="mui-input-clear">位置</label>
+				<input type="text" class="mui-input-clear" />
+			</div>
+			<div class="mui-input-row">
+				<label>语言</label>
+				<input type="text" class="mui-input-clear" value="zh-Hans" />
+			</div>
+			<div class="mui-input-row">
+				<label>单位</label>
+				<input type="text" class="mui-input-clear" value="c" />
+			</div>
+			<div class="mui-input-row">
+				<label>起始时间</label>
+				<input type="text" class="mui-input-clear" value="0" />
+			</div>
+			<div class="mui-input-row">
+				<label>天数</label>
+				<input type="text" class="mui-input-clear" value="3" />
+			</div>
+			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">按钮</button>
 		</div>
-		<script type="text/javascript" src="../js/grid/weather.js"></script>
+		<script type="text/javascript" src="../js/grid/weather.js" id="weather-submit-id"></script>
 	</body>
 
 </html>
