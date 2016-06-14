@@ -27,6 +27,9 @@
 			"fonts/mui.ttf",
 			"js/mui.min.js",
 			"css/mui.min.css"
+		],
+		"refer": [
+			"grid/idCard.html"
 		]
 	}
 }

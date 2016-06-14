@@ -28,35 +28,36 @@
 			<!--
 	作者：guomindongdsl@163.com
 	时间：2016-06-14
-	描述：location: '%E6%9C%9D%E9%98%B3',
-			language: 'zh-Hans',
-			unit: 'c',
-			start: '0',
-			days: '3'
+	描述：参数名 	    类型 	必填 	参数位置 	描述 	    默认值
+		location    string 	是 	   urlParam 	所查询的位置     beijing
+		language   string 	否 	   urlParam 	语言            zh-Hans
+		unit       string 	否 	  urlParam 	单位            c
+		start     string 	    否 	 urlParam    起始时间        0
+         days     string 	   否 	urlParam 	天数            3
 -->
 			<div class="mui-input-row">
 				<label for="mui-input-clear">位置</label>
-				<input type="text" class="mui-input-clear" />
+				<input type="text" class="mui-input-clear" id="weather-location-id" />
 			</div>
-			<div class="mui-input-row">
+			<div class="mui-input-row mui-hidden">
 				<label>语言</label>
-				<input type="text" class="mui-input-clear" value="zh-Hans" />
+				<input type="text" class="mui-input-clear" value="zh-Hans" id="weather-language-id" />
 			</div>
-			<div class="mui-input-row">
+			<div class="mui-input-row mui-hidden">
 				<label>单位</label>
-				<input type="text" class="mui-input-clear" value="c" />
+				<input type="text" class="mui-input-clear" value="c" id="weather-unit-id" />
 			</div>
-			<div class="mui-input-row">
+			<div class="mui-input-row mui-hidden">
 				<label>起始时间</label>
-				<input type="text" class="mui-input-clear" value="0" />
+				<input type="text" class="mui-input-clear" value="0" id="weather-start-id" />
 			</div>
-			<div class="mui-input-row">
+			<div class="mui-input-row mui-hidden">
 				<label>天数</label>
-				<input type="text" class="mui-input-clear" value="3" />
+				<input type="text" class="mui-input-clear" value="3" id="weather-days-id" />
 			</div>
-			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">按钮</button>
+			<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="weather-submit-id">按钮</button>
 		</div>
-		<script type="text/javascript" src="../js/grid/weather.js" id="weather-submit-id"></script>
+		<script type="text/javascript" src="../js/grid/weather.js"></script>
 	</body>
 
 </html>

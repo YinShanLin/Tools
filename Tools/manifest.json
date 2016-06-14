@@ -234,7 +234,9 @@
 					"js/mui.min.js",
 					"css/mui.min.css"
 				],
-				"refer": [],
+				"refer": [
+					"grid/idCard.html"
+				],
 				"priority": 0
 			}
 		},
