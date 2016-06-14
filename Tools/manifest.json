@@ -214,14 +214,18 @@
 				],
 				"refer": [
 					"grid/express.html",
-					"grid/weather.html"
+					"grid/weather.html",
+					"grid/IPAddress.html",
+					"grid/phoneNumber.html"
 				],
 				"priority": 0
 			},
 			"grid/IPAddress.html": {
 				"resources": [
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"js/grid/IPAddress.js",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -236,12 +240,18 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"grid/phoneNumber.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
-			"resources": [
-				"grid/phoneNumber.html"
-			]
+			"resources": []
 		}
 	}
 }

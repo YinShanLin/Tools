@@ -11,13 +11,17 @@
 		],
 		"refer": [
 			"grid/express.html",
-			"grid/weather.html"
+			"grid/weather.html",
+			"grid/IPAddress.html",
+			"grid/phoneNumber.html"
 		]
 	},
 	"grid/IPAddress.html": {
 		"resources": [
 			"js/mui.min.js",
-			"css/mui.min.css"
+			"css/mui.min.css",
+			"js/grid/IPAddress.js",
+			"fonts/mui.ttf"
 		]
 	},
 	"grid/weather.html": {
@@ -25,6 +29,12 @@
 			"css/grid/weather.css",
 			"js/grid/weather.js",
 			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"grid/phoneNumber.html": {
+		"resources": [
 			"js/mui.min.js",
 			"css/mui.min.css"
 		]
