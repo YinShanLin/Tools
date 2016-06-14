@@ -208,15 +208,29 @@
 					"js/mui.min.js",
 					"fonts/mui.ttf",
 					"css/mui.min.css",
-					"css/index/index.css"
+					"css/index/index.css",
+					"fonts/iconfont.ttf",
+					"css/index/iconfont.css"
 				],
 				"refer": [
-					"grid/express.html"
+					"grid/express.html",
+					"grid/weather.html"
 				],
 				"priority": 0
 			},
 			"grid/IPAddress.html": {
 				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"grid/weather.html": {
+				"resources": [
+					"css/grid/weather.css",
+					"js/grid/weather.js",
+					"fonts/mui.ttf",
 					"js/mui.min.js",
 					"css/mui.min.css"
 				],
