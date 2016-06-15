@@ -35,7 +35,7 @@
 		start     string 	    否 	 urlParam    起始时间        0
          days     string 	   否 	urlParam 	天数            3
 -->
-			<div class="mui-input-row">
+			<div class="mui-input-row" id="weather-location-div-id">
 				<label for="mui-input-clear">位置:</label>
 				<input type="text" class="mui-input-clear" id="weather-location-id" placeholder="请输入所要查询的城市" />
 			</div>
@@ -65,18 +65,56 @@
 			</ul>
 			<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="weather-submit-id">按钮</button>
 		</div>
-		<div class="mui-content">
-			<ul class="mui-table-view">
+		<p style="height: 2px;" id="weather-progressbar-id"></p>
+		<div class="mui-content mui-hidden" id="weather-results">
+			<table>
+				<thead>
+					<tr>
+						<!--<th>地区</th>-->
+						<th>日期</th>
+						<th>白</th>
+						<th>夜</th>
+						<th>最高.低(℃)</th>
+						<th>风向.级</th>
+					</tr>
+					<tr>
+						<!--<td rowspan="3">
+							<span id="weather-results-path-id"></span>
+						</td>-->
+						<td>
+							<table id="weather-date-id">
+							</table>
+						</td>
+						<td>
+							<table id="weather-text_day-id">
+							</table>
+						</td>
+						<td>
+							<table id="weather-text_night-id">
+							</table>
+						</td>
+						<td>
+							<table id="weather-high_low_id">
+							</table>
+						</td>
+						<td>
+							<table id="weather-wind_direction_scale-id">
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5">最新更新时间:
+							<span id="weather-last-update-id"></span>
+						</td>
+					</tr>
+				</thead>
+			</table>
+			<!--<ul class="mui-table-view" id="weather-results-ul-id">
 				<li class="mui-table-view-cell">
-					<span></span>
+					<label for="weather-results-path-id">地区</label>
+					<span id="weather-results-path-id"></span>
 				</li>
-				<li class="mui-table-view-cell">
-					<span></span>
-				</li>
-				<li class="mui-table-view-cell">
-					<span></span>
-				</li>
-			</ul>
+			</ul>-->
 		</div>
 		<script type="text/javascript" src="../js/grid/weather.js"></script>
 	</body>

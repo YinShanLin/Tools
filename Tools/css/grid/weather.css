@@ -1,0 +1,13 @@
+#weather-location-div-id {
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid lightblue;
+}
+
+th {
+	border: 1px solid lightblue;
+}
+
+td {
+	border: 1px solid lightblue;
+}

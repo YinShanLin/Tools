@@ -32,13 +32,25 @@ mui.ready(function() {
 	/**
 	 * 九宫格对应的页面
 	 * */
-	function openGridPages(aaa, bbb) {
-		document.getElementById(aaa).addEventListener('tap', function() {
-			mui.openWindow({
-				url: bbb
+//	function openGridPages(aaa, bbb) {
+//		document.getElementById(aaa).addEventListener('tap', function() {
+//			mui.openWindow({
+//				url: bbb
+//			});
+//		});
+//	}
+
+		function openGridPages(aaa, bbb) {
+			document.getElementById(aaa).addEventListener('tap', function() {
+				mui.openWindow({
+					url: bbb,
+					waiting: {
+						autoShow: true, //自动显示等待框，默认为true
+						title: '正在加载...' //等待对话框上显示的提示内容
+					}
+				})
 			});
-		});
-	}
+		}
 
 	openGridPages('express-tap-id', 'grid/express.html');
 	openGridPages('phoneNumber-tap-id', 'grid/phoneNumber.html');
@@ -51,4 +63,3 @@ mui.ready(function() {
 	openGridPages('news-tap-id', 'grid/news.html');
 
 });
-
