@@ -11,6 +11,11 @@ mui.plusReady(function() {
 		var weather_start = document.getElementById("weather-start-id").value;
 		var weather_days = document.getElementById("weather-days-id").value;
 
+		if (weather_location.length < 1) {
+			mui.alert("查詢城市不允许为空", "重大提示", "明白", null);
+			return;
+		}
+
 		var container = mui("#weather-progressbar-id");
 		if (container.progressbar({
 				progress: 0
@@ -18,9 +23,13 @@ mui.plusReady(function() {
 			simulateLoading(container, 0);
 		}
 
-		if (weather_location.length < 1) {
-			mui.alert("查詢城市不允许为空", "重大提示", "明白", null);
-			return;
+		var parentNode = document.getElementById("weather-date-id");
+
+		if (parentNode.hasChildNodes()) {
+			alert(parentNode.childNodes);
+			alert(parentNode.childNodes().nodeName);
+		} else {
+			alert("没有子节点");
 		}
 
 		mui.ajax(url, {
@@ -102,7 +111,7 @@ mui.plusReady(function() {
 
 				}
 
-				document.getElementById("weather-last-update-id").innerHTML = new Date(Date.parse(data.results[0].last_update)).pattern("yyyy-MM-dd hh:mm:ss");
+				document.getElementById("weather-last-update-id").innerHTML = new Date(Date.parse(data.results[0].last_update)).pattern("yyyy-MM-dd HH:mm:ss");
 			},
 			error: function(xhr, type, errorThrown) {
 				console.log(xhr.prototype);
