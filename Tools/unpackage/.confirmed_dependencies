@@ -41,5 +41,16 @@
 			"js/mui.min.js",
 			"css/mui.min.css"
 		]
+	},
+	"welcome/welcome.html": {
+		"resources": [
+			"css/welcome/welcome.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/welcome/welcome.js"
+		],
+		"refer": [
+			"index.html"
+		]
 	}
 }
